@@ -47,6 +47,7 @@ body {
 
 form {
   width: 80vw;
+  min-height: 80vh;
   background-color: var(--White);
   border-radius: 10px;
   display: flex;
