@@ -2,6 +2,7 @@ import { CardDetails, CheckboxDetails } from "@/constants";
 import React, { useState } from "react";
 import Card from "./Card";
 import CustomCheckbox from "./CustomCheckbox";
+import Image from "next/image";
 
 const StepInformation = ({ step, setStep }) => {
   const [error, setError] = useState(false);
@@ -345,7 +346,25 @@ const StepInformation = ({ step, setStep }) => {
         </div>
       </div>
       <div className={`stepContent ${step === 5 ? "activeStep" : ""}`}>
-        step 5
+        <div className="lastStep">
+          <div className="lastImage">
+            <Image
+              src="/icon-thank-you.svg"
+              layout="responsive"
+              height={50}
+              width={50}
+              alt={"Checkmark"}
+            ></Image>
+          </div>
+          <div className="stepDetails">
+            <h1>Thank you!</h1>
+            <p>
+              Thanks for confirming your subscription! We hope you have fun
+              using our platform. If you ever need support, please feel free to
+              email us at support@loremgaming.com.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
