@@ -1,0 +1,65 @@
+.counter {
+  background-color: var(--Magnolia);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.selectedCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--Cool-gray);
+}
+.selectedCard__title {
+  color: var(--Marine-blue);
+  font-weight: bold;
+}
+.selectedCard__price {
+  color: var(--Marine-blue);
+  font-weight: bold;
+  font-size: 18px;
+}
+.change__btn {
+  color: var(--Cool-gray);
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.change__btn:hover,
+.change__btn:active {
+  color: var(--Marine-blue);
+}
+
+.selectedOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.option {
+  color: var(--Cool-gray);
+  font-weight: bold;
+}
+.optionPrice {
+  color: var(--Marine-blue);
+  font-weight: bold;
+}
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+
+.totalPrice h4 {
+  color: var(--Cool-gray);
+}
+.totalPrice__value {
+  color: var(--Purplish-blue);
+  font-weight: bold;
+  font-size: 20px;
+}

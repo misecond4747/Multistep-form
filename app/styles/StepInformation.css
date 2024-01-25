@@ -1,0 +1,148 @@
+@import "./switch.css";
+@import "./Checkbox.css";
+@import "./Price.css";
+.contentContainer {
+  width: 70%;
+  padding-block: 1rem;
+}
+
+.stepContent {
+  display: none;
+  height: 100%;
+  margin: auto;
+  max-width: 70%;
+  justify-content: center;
+  gap: 4vh;
+  flex-direction: column;
+}
+
+.stepDetails h1 {
+  color: var(--Marine-blue);
+  margin-bottom: 0.5rem;
+}
+.stepDetails p {
+  color: var(--Cool-gray);
+}
+
+.activeStep {
+  display: flex;
+}
+
+.name,
+.email,
+.phone {
+  padding: 0.5rem 0;
+}
+.contentInputs {
+  border-radius: 10px;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid var(--Cool-gray);
+  font-size: medium;
+  color: var(--Marine-blue);
+  outline-color: var(--Marine-blue);
+}
+.name label,
+.email label,
+.phone label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 5px;
+  color: var(--Marine-blue);
+}
+
+.errorMessage {
+  color: var(--Strawberry-red);
+  display: none;
+}
+
+.error {
+  display: block;
+}
+.inputError {
+  border-color: var(--Strawberry-red);
+  outline-color: var(--Strawberry-red);
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons button {
+  padding: 0.8rem 1.6rem;
+  font-size: medium;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.previousButton {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--Cool-gray);
+  font-weight: bold;
+}
+
+.previousButton:hover {
+  color: var(--Marine-blue);
+}
+.nextButton {
+  background-color: var(--Marine-blue);
+  color: var(--White);
+}
+
+.disable {
+  opacity: 0;
+}
+
+/* card stylings */
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 10px;
+  border: 1px solid var(--Light-gray);
+  height: 200px;
+  width: 200px;
+  padding-inline: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.cardImage {
+  object-fit: contain;
+}
+
+.card h2 {
+  color: var(--Marine-blue);
+}
+
+.card p:nth-child(2) {
+  color: var(--Cool-gray);
+  margin-block: 0.4rem;
+}
+.extra {
+  color: var(--Marine-blue);
+}
+.card:hover {
+  border-color: var(--Marine-blue);
+}
+
+.activeCard {
+  border-color: var(--Marine-blue);
+  background-color: var(--Magnolia);
+}
+
+.card > * {
+  margin: auto;
+}
